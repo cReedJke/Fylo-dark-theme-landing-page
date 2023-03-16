@@ -210,6 +210,10 @@
 
   /* .main__early-access */
 
+  .main__early-access {
+    position: relative;
+  }
+
   .main__early-access div {
     padding: 9vw 6vw;
     display: grid;
@@ -244,6 +248,14 @@
     background-color: hsl(198, 60%, 50%);
     color: hsl(0, 0%, 100%);
     font-family: 'Raleway', sans-serif;
+  }
+
+  .main__early-access--invisible {
+    display: none;
+    position: absolute;
+    top: 77%;
+    color: rgb(214, 0, 0);
+    font-size: 0.8vw;
   }
 
   /* .footer */
