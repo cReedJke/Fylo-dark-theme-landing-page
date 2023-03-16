@@ -369,11 +369,16 @@
     justify-content: space-around;
   }
 
-  .header__nav a{
+  .header__nav a {
     font-size: 1vw;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     color: hsl(0, 0%, 100%);
+  }
+
+  .header__nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
   }
 
    /* .main__description */
@@ -413,6 +418,11 @@
     color: hsl(0, 0%, 100%);
     background-color: hsl(198, 60%, 50%);
     font-family: 'Raleway', sans-serif;
+  }
+
+  .main__description button:hover {
+    cursor: pointer;
+    background-color:hsl(176, 68%, 64%);
   }
 
   /* .main__features */
@@ -487,6 +497,10 @@
     text-decoration: none;
   }
 
+  .main__productive a:hover {
+    filter: saturate(0%)
+  }
+
   .main__productive__image--arrow-image {
     justify-self: end;
     width: 140%;
@@ -555,6 +569,7 @@
 
   .main__early-access {
     padding: 10vw 8vw 0;
+    position: relative;
   }
 
   .main__early-access div {
@@ -598,6 +613,20 @@
     background-color: hsl(198, 60%, 50%);
     color: hsl(0, 0%, 100%);
     font-family: 'Raleway', sans-serif;
+  }
+
+  .main__early-access button:hover {
+    cursor: pointer;
+    background-color:hsl(176, 68%, 64%);
+  }
+
+  .main__early-access--invisible {
+    display: none;
+    position: absolute;
+    top: 92%;
+    left: 22.2%;
+    color: rgb(214, 0, 0);
+    font-size: 0.8vw;
   }
 
   /* .footer */
@@ -664,6 +693,10 @@
     color: hsl(0, 0%, 100%);
   }
 
+  .footer__links-upper a:hover {
+    font-weight: bold;
+  }
+
   .footer__links-lower {
     justify-self: center;
     display: flex;
@@ -675,6 +708,10 @@
     font-size: 0.8vw;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
+  }
+
+  .footer__links-lower a:hover {
+    font-weight: bold;
   }
 
   .footer__social {
@@ -690,5 +727,10 @@
     width: 70%;
     /* https://codepen.io/sosuke/pen/Pjoqqp - filter computing*/
     filter: invert(100%) sepia(31%) saturate(1287%) hue-rotate(293deg) brightness(123%) contrast(100%);
+  }
+
+  .footer__social img:hover {
+    /* https://codepen.io/sosuke/pen/Pjoqqp - filter computing*/
+    filter: invert(68%) sepia(77%) saturate(261%) hue-rotate(127deg) brightness(102%) contrast(91%);
   }
 }
